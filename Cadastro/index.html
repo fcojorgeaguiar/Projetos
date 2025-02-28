@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>TESTE DE CADASTRO</h1>
+    <div>
+        <h2>Insira seus dados:</h2>
+        <p><label for="nome">Nome:</label> <input type="text" name="nome" id="nome" autocomplete="off"></p>
+        <p><label for="idade">Idade:</label> <input type="number" name="idade" id="idade"></p>
+    
+        
+           <p> Sexo:
+               <input type="radio" name="sx" id="masc" value="Masculino" checked><label for="masc">Maculino</label>
+               <input type="radio" name="sx" id="fem" value="Feminino"><label for="fem">Feminino</label>
+           </p>
+    
+        <input type="button" value="Finalizar cadastro" onclick="finalizar()">
+    </div>
+    <div id="resultado">
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
