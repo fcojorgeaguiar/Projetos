@@ -18,7 +18,7 @@ const relogio = setInterval(function time(){
 
     if (h <= 11){
         manha()
-    } else if(h > 11 && h <= 18){
+    } else if(h > 11 && h < 18){
         tarde()
     } else {
         noite()
