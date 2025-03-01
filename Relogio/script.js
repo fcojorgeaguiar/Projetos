@@ -16,7 +16,7 @@ const relogio = setInterval(function time(){
     minutos.textContent = m
     segundos.textContent = s
 
-
+    
 })
 
 function manha(){
