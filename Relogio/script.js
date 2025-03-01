@@ -16,7 +16,14 @@ const relogio = setInterval(function time(){
     minutos.textContent = m
     segundos.textContent = s
 
-    
+    if (h <= 11){
+        manha()
+    } else if(h > 11 && h <= 18){
+        tarde()
+    } else {
+        noite()
+    }
+   
 })
 
 function manha(){
@@ -24,7 +31,7 @@ function manha(){
 }
 
 function tarde(){
-    document.body.style.background = ' background: linear-gradient(120deg, #ffe53bd8, #ff2525da);'
+    document.body.style.background = 'linear-gradient(120deg, #ffe53bd8, #ff2525da)'
 }
 
 function noite(){
