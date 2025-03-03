@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout 5</title>
+    <title>Layout 6</title>
     <style>
         *{
             margin: 0;
@@ -11,17 +11,22 @@
         }
         #conteiner{
             display: grid;
-            gap: 5px;
-            
         }
         header{
             background-color: blueviolet;
+            color: #fff;
+            grid-column: span 5 /*Ocupar tudo por 5 colunas*/;
+            height: 10vh;
         }
         aside{
             background-color: aqua;
         }
         article{
             background-color: chartreuse;
+            grid-column: span 4;
+            grid-row: span 2;/*Ocupar duas linhas*/
+            height: 80vh;
+            position: relative;
         }
         section{
             background-color: brown;
@@ -29,6 +34,14 @@
         }
         footer{
             background-color: chocolate;
+            grid-column: span 5;
+            height: 10vh;
+        }
+        iframe {
+          width: 100%;
+          height: 100%;
+          border: none;
+          overflow: hidden;
         }
     </style>
 </head>
@@ -41,13 +54,13 @@
            Lado
         </aside>
         <article class="item">
-           Artigo
+            <iframe src="../Relogio/index.html" frameborder="0"></iframe>
         </article>
         <section class="item">
             Seção
         </section>
         <footer class="item">
-            Rodapé
+           Rodapé
         </footer>
     </div>
 </body>
