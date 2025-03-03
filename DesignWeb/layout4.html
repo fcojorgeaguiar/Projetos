@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 4</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        #conteiner{
+           display: grid;
+           grid-template-columns: auto auto auto;/*Três colunas automáticas*/
+           grid-template-rows: 200px 50px;/*Primeira linha terá 200px, segunda linha terá 50px*/
+        }
+        .item{
+            background-color: chocolate;
+            padding: 34px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div class="item">Teste</div>
+        <div class="item">Teste</div>
+        <div class="item">Teste</div>
+        <div class="item">Teste</div>
+
+    </div>
+</body>
+</html>

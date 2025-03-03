@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 5</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #conteiner{
+            display: grid;
+            grid-template-areas: 
+            'header header header'
+            'aside article section'
+            'footer footer footer';
+            gap: 5px;/*Espaçamento entre itens*/
+            grid-template-rows: 10vh 80vh 50px;
+        }
+        header{
+            grid-area: header;
+            background-color: blueviolet;
+        }
+        aside{
+            grid-area: aside;
+            background-color: aqua;
+        }
+        article{
+            grid-area: article;
+            background-color: chartreuse;
+        }
+        section{
+            grid-area: section;
+            background-color: brown;
+            color: #fff;
+        }
+        footer{
+            grid-area: footer;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <header class="item">
+           Cabeçalho
+        </header>
+        <aside class="item">
+           Lado
+        </aside>
+        <article class="item">
+           Artigo
+        </article>
+        <section class="item">
+            Seção
+        </section>
+        <footer class="item">
+            Rodapé
+        </footer>
+    </div>
+</body>
+</html>
