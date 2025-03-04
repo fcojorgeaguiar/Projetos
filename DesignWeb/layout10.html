@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 10</title>
+    <style>
+        /*
+             ## ALINHAMENTO:
+
+              # Justify e align:
+                - Justify: alinhamento no eixo x;
+                - align: alinhamento no eixo y;
+
+              # content, item e self:
+                - content: alinha os itens no espaço disponível no conteiner.
+                     start (no início)
+                     end (no fim)
+                     center (no centro)
+                     stretch (preenche)
+                     space-between (espaço entre os itens)
+                     space-around (espaço ao redor dos itens)
+                     space-evenly (espaçamento igual entre os itens)
+                - item: alinha os itens em sua própria célula.
+                    start
+                    end
+                    center
+                    stretch
+                - self: Faz a mesma coisa que o justify-items e align-items, mas aplicando diretamente em um determinado item de um grid.
+
+        */
+        
+        html, body{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+        }
+        .conteiner{
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 5px;
+        }
+        .conteiner>div{
+            background: purple;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

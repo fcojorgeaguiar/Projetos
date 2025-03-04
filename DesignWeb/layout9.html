@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 9</title>
+    <style>
+        /*
+        ## GRID OU FLEXBOX:
+          - Grid: duas dimensões(colunas e linhas);
+          - Flexbox: uma dimensão (ou colunas ou linhas);
+          - Um complementa o trabalho do outro;
+          - Verificar quais navegadores ainda não estão aceitando o Grid.
+
+        ## PROPRIEDADES DO GRID:
+          
+           # CONTEINER:
+             
+             - display: Grid (inicia o conteiner falando que é um grid)
+             
+             - grid-template-columns (fatia a tela em colunas)
+
+             - grid-template-rows (divide as linhas)
+
+             - grid-gap (espaçamentos)
+               - grid-row-gap (espaçamento na linha)
+               - grid-column-gap (espaçamento na coluna)
+            
+            - grid-template-areas (delimita as areas)
+          
+          # ITEM:
+            
+            - grid-column (onde vai ficar o item na coluna)
+              - grid-column-start
+              - grid-column-end
+            
+            - grid-row (onde vai ficar o item na linha)
+              - grid-row-start
+              - grid-row-end
+
+            - grid-area (onde vai ficar o item na area)
+        */
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #7159c1;
+        }
+        .conteiner{
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            grid-template-rows: 20vh 70vh 10vh;
+            grid-template-areas: 
+            "header header"
+            "main aside"
+            "footer footer"
+            ;
+        }
+        header{
+            background-color: yellow;
+           /*
+            grid-column-start: 1; (Começa na coluna 1)
+            grid-column-end: 3; (Termina na coluna 3)
+            Os comandos acima podem ser substituídos por grid-template-areas
+            */
+            grid-area: header;
+        }
+        main{
+            background-color: blue;
+            grid-area: main;
+        }
+        aside{
+            background-color: green;
+            grid-area: aside;
+        }
+        footer{
+            background-color: red;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <header></header>
+        <main></main>
+        <aside></aside>
+        <footer></footer>
+    </div>
+</body>
+</html>
