@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 12</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+        }
+        h1{
+            margin: 0;
+            padding: 30px;
+            
+        }
+        header{
+            text-align: center;
+            background-color: blue;
+            color: #fff;
+        }
+        nav{
+            display: flex;
+            flex-direction: column;
+            background-color: #333;
+        }
+        nav a{
+           color: #fff;
+           text-decoration: none;
+           padding: 20px 20px;
+           text-align: center;
+        }
+        nav a:hover{
+            background-color: #fff;
+            color: #000;
+        }
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+        .side{
+            flex: 30%;
+            background-color: #64047c;
+            color: #fff;
+            padding: 20px;
+            height: 500px;
+        }
+        .main{
+          flex: 70%;
+          background-color: rgb(12, 215, 229);
+          font-size: 24px;
+          height: 500px;
+          padding: 20px;
+        }
+        footer{
+            padding: 5px;
+            color: #fff;
+            text-align: center;
+            background-color: #333;
+            height: 150px;
+        }
+        @media screen and (min-width: 700px){
+           nav, .row{
+            flex-direction: row;
+           }
+           footer{
+             height: 80px;
+           }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu WebSite</h1>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Produtos</a>
+        <a href="#">Contatos</a>
+        <a href="#">Sobre nós</a>
+    </nav>
+    <div class="row">
+        <div class="side">
+            <h2>Sobre mim</h2>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quisquam mollitia doloremque cupiditate nostrum totam, explicabo blanditiis odio quos laboriosam soluta. Dolorum expedita doloribus voluptatibus, facere quam quae optio obcaecati.</p>
+        </div>
+        <div class="main">
+            <h2>Principal</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum, nostrum iste. Reprehenderit, sapiente. Temporibus quia, veritatis delectus incidunt dolor dignissimos ea explicabo at facilis qui totam ab aspernatur, cum rerum.</p>
+        </div>
+    </div>
+    <footer>
+        <h2>Rodapé</h2>
+    </footer>
+</body>
+</html>
