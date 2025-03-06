@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Animado</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="ring">
+        <i style="--clr:#00ff0a;" id="i"></i>
+        <i style="--clr:#00e1ff;" id="ii"></i>
+        <i style="--clr:#fffd44;" id="iii"></i>
+        <div class="login">
+            <h2>Login</h2>
+            <div class="inputbx">
+                <input type="text" name="user" id="user" placeholder="Usuário">
+            </div>
+            <div class="inputbx">
+                <input type="password" name="password" id="password" placeholder="Senha">
+            </div>
+            <div class="inputbx">
+                <input type="submit" value="Sign in" onclick="logar()">
+            </div>
+            <div class="links">
+                <a href="#">Esqueci a senha</a>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
