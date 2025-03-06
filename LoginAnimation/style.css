@@ -86,6 +86,12 @@ body{
     color: #fff;
 }
 
+p{
+    color: red;
+    font-size: 15px;
+    padding: 5px;
+}
+
 .login .inputbx{
     position: relative;
     width: 100%;

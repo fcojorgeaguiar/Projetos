@@ -1,5 +1,7 @@
 let user = document.getElementById('user')
 let senha = document.getElementById('password')
+let mu = document.getElementById('m-u')
+let ms = document.getElementById('m-s')
 
 
 function logar(){
@@ -8,17 +10,22 @@ function logar(){
 
     if (u =='' && s == 0){
         vermelho()
+        mu.innerText = 'Por favor, digite o usuário!'
+        ms.innerText = 'Por favor, digite a senha!'
+
     } 
 }
 
 user.addEventListener('blur', ()=>{
     colorido()
     document.getElementById('user').style.border='2px solid rgb(255, 255, 255)'
+    mu.innerText = ''
 })
 
 senha.addEventListener('blur', ()=>{
     colorido()
     document.getElementById('password').style.border='2px solid rgb(255, 255, 255)'
+    ms.innerText = ''
 })
 
 function vermelho(){
