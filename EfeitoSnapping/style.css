@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pager1{
+    background-color: red;
+}
+.pager2{
+    background-color: yellow;
+}
+.pager3{
+    background-color: green;
+}
+.pager4{
+    background-color: blue;
+}
+.pager5{
+    background-color: purple;
+}
+
+.interface{
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+}
+
+section{
+    height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    position: sticky;
+    top: 0;
+    left: 0;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
