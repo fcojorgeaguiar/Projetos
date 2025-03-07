@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pager1{
+    background-color: #734429;
+}
+.pager2{
+    background-color: #D9B391;
+}
+.pager3{
+    background-color: #A66329;
+}
+.pager4{
+    background-color: #402401;
+}
+.pager5{
+    background-color: #A68444;
+}
+
+.interface{
+    height: 100vh;
+    
+}
+
+section{
+    height: 100vh;
+}
+
+h1{
+   position: relative;
+   top: 20%;
+   text-align: center;
+}
+.title{
+    visibility: hidden;
+}
+
+.p{
+    color: black;
+    visibility: hidden;
+    position: relative;
+    top: 55%;
+    text-align: justify;
+    margin: 0 100px;
+}
