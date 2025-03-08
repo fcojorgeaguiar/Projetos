@@ -19,10 +19,11 @@ const d12 = document.getElementById('d12')
 const d13 = document.getElementById('d13')
 const d14 = document.getElementById('d14')
 const d15 = document.getElementById('d15')
-
+let d = document.getElementById('d1')
 const ciclo = []
-ciclo[0] = d2
+ciclo[0] = 
 assunto3.innerText = ciclo[0]
+
 
 
 const calendario = setInterval(function time(){
