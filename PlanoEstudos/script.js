@@ -4,31 +4,24 @@ const data = document.getElementById('data')
 const assunto1 = document.getElementById('a1')
 const assunto2 = document.getElementById('a2')
 const assunto3 = document.getElementById('a3')
-const d1 = document.getElementById('d1')
-const d2 = document.getElementById('d2')
-const d3 = document.getElementById('d3')
-const d4 = document.getElementById('d4')
-const d5 = document.getElementById('d5')
-const d6 = document.getElementById('d6')
-const d7 = document.getElementById('d7')
-const d8 = document.getElementById('d8')
-const d9 = document.getElementById('d9')
-const d10 = document.getElementById('d10')
-const d11 = document.getElementById('d11')
-const d12 = document.getElementById('d12')
-const d13 = document.getElementById('d13')
-const d14 = document.getElementById('d14')
-const d15 = document.getElementById('d15')
-let d = document.getElementById('d1')
 const ciclo = []
-ciclo[0] = 
-assunto3.innerText = ciclo[0]
+ciclo[0] = 'Interpretação de textos'
+ciclo[1] = 'Ortografia'
+ciclo[2] = 'Substantivo'
+ciclo[3] = 'Pronomes'
 
+function muda(x){
 
+}
 
 const calendario = setInterval(function time(){
     const dataToday = new Date()
     const s = dataToday.getDay()
+    const t = dataToday.getSeconds()
+    assunto3.innerText = ciclo[t]
+    const c = 1
+    dia.innerText = `DIA ${c}`
+    
      switch(s){
         case 0:
             sem.innerHTML = 'Domingo'
