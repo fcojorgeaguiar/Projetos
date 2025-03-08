@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: blue;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('Imagens/pexels-fauxels-3184464.jpg');
+    background-size: cover;
+}
+main{
+   background-color: white;
+   margin: auto;
+   width: 80vw;
+   height: 500px;
+   margin-top: 25px;
+   border-radius: 10px;
+   padding: 20px;
+  
+}
