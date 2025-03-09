@@ -4,27 +4,10 @@ const data = document.getElementById('data')
 const assunto1 = document.getElementById('a1')
 const assunto2 = document.getElementById('a2')
 const assunto3 = document.getElementById('a3')
-const ciclo = []
-ciclo[0] = 'Interpretação de textos'
-ciclo[1] = 'Ortografia'
-ciclo[2] = 'Substantivo'
-ciclo[3] = 'Pronomes'
-
-function muda(x){
-   const c = Number(1)
-   if (x>=10){
-      return c
-   } else{
-    return 10
-   }
-}
 
 const calendario = setInterval(function time(){
     const dataToday = new Date()
     const s = dataToday.getDay()
-    const t = dataToday.getSeconds()
-    assunto3.innerText = ciclo[t]
-    dia.innerText = `DIA ${muda(t)}`
     
      switch(s){
         case 0:
