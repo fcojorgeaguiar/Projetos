@@ -11,7 +11,12 @@ ciclo[2] = 'Substantivo'
 ciclo[3] = 'Pronomes'
 
 function muda(x){
-
+   const c = Number(1)
+   if (x>=10){
+      return c
+   } else{
+    return 10
+   }
 }
 
 const calendario = setInterval(function time(){
@@ -19,8 +24,7 @@ const calendario = setInterval(function time(){
     const s = dataToday.getDay()
     const t = dataToday.getSeconds()
     assunto3.innerText = ciclo[t]
-    const c = 1
-    dia.innerText = `DIA ${c}`
+    dia.innerText = `DIA ${muda(t)}`
     
      switch(s){
         case 0:

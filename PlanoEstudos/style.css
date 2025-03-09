@@ -23,6 +23,14 @@ main{
    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.39);
   
 }
+h1{
+    margin-bottom: 0;
+}
+h2{
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 100px;
+}
 
 div{
     background-color: white;
@@ -53,11 +61,4 @@ p{
     font-size: 15px;
     margin-bottom: 16px;
     text-indent: 10px;
-}
-
-#data{
-    text-align: right;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 15px;
 }
