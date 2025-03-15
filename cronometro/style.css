@@ -71,3 +71,15 @@ body{
 #marks-list p:first-child{
       margin-top: 1.5rem;
 }
+
+#modo{
+    background-color: #262626;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+    
+}
+
+#modo label{
+    margin-left: 8px;
+}
