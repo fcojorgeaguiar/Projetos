@@ -1,8 +1,19 @@
 const timeEl = document.getElementById("time")
 const MarksList = document.getElementById("marks-list")
+const noite = document.getElementById('noturno')
+const dia = document.getElementById('diurno')
 let intervalId = 0
 let timer = 0
 let marks = []
+
+const m = document.getElementById('modo')
+m.addEventListener('click', ()=>{
+    if (dia.checked){
+    document.body.style.background = 'linear-gradient(180deg, #F2CB05, #F29F05)'
+    } else if(noite.checked){
+        document.body.style.background = 'linear-gradient(180deg, #323050,  #45214A)'
+    }
+})
 
 const formatTime = (time) =>{
     const hours = Math.floor( time / 360000)
