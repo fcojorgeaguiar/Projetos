@@ -10,8 +10,28 @@ const m = document.getElementById('modo')
 m.addEventListener('click', ()=>{
     if (dia.checked){
     document.body.style.background = 'linear-gradient(180deg, #F2CB05, #F29F05)'
+     document.getElementById('stopwatch').style.background = "#fff"
+     document.getElementById('time').style.background = '#fff'
+     document.getElementById('modo').style.background = '#fff'
+     document.getElementById('modo').style.color = '#000'
+     document.getElementById('time').style.color = '#000'
+     document.getElementById('time').style.border = '3px solid #f2cb05'
+     document.getElementById('reset').style.background = '#f29f05'
+     document.getElementById('power').style.background = '#f29f05'
+     document.getElementById('mark').style.background = '#f29f05'
+     document.getElementById('marks-list').style.color = '#000'
     } else if(noite.checked){
         document.body.style.background = 'linear-gradient(180deg, #323050,  #45214A)'
+         document.getElementById('stopwatch').style.background = "#262626"
+         document.getElementById('time').style.background = '#262626'
+         document.getElementById('modo').style.background = '#262626'
+         document.getElementById('modo').style.color = '#fff'
+         document.getElementById('time').style.color = '#fff'
+         document.getElementById('time').style.border = '3px solid #9f6bff'
+         document.getElementById('reset').style.background = '#e0e7ff'
+         document.getElementById('power').style.background = '#e0e7ff'
+         document.getElementById('mark').style.background = '#e0e7ff'
+         document.getElementById('marks-list').style.color = '#fff'
     }
 })
 
