@@ -5,10 +5,12 @@ const assunto1 = document.getElementById('a1')
 const assunto2 = document.getElementById('a2')
 const assunto3 = document.getElementById('a3')
 
+dia.style.display = 'none'
+assunto3.style.display = 'none'
+
 const calendario = setInterval(function time(){
     const dataToday = new Date()
     const s = dataToday.getDay()
-    
      switch(s){
         case 0:
             sem.innerHTML = 'Domingo'
