@@ -64,7 +64,7 @@ function resetTimer(){
     startBtn.style.display = 'block'
     pauseBtn.style.display = 'none'
     resumeBtn.style.display = 'none'
-
+    isPaused = false
 }
 
 function formatTime(time){
