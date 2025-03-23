@@ -28,6 +28,7 @@ body{
     color: var(--corEstatico);
     font-size: 60px;
     font-weight: 400;
+    align-self: center;
 }
 
 .conteiner .dinamico{
@@ -76,8 +77,15 @@ body{
     }
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 700px){
     .conteiner{
         flex-direction: column;
+    }
+    
+    .conteiner .estatico{
+        align-self: start;
+    }
+    .conteiner .dinamico{
+        margin-left: 0;
     }
 }
