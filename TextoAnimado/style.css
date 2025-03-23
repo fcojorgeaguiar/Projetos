@@ -10,7 +10,7 @@
 :root{
     --corFundo: #2F3D40;
     --corEstatico: #fff;
-    --corAnimado: #B2BEBF;
+    --corAnimado: #DBF227;
 }
 
 body{
@@ -22,9 +22,8 @@ body{
 }
 
 .conteiner{
-    display: inline-flex;
+   display: inline-flex;   
 }
-
 .conteiner .estatico{
     color: var(--corEstatico);
     font-size: 60px;
