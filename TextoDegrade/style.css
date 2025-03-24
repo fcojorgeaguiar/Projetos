@@ -4,6 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Luckiest guy', sans-serif;
+}
+
+:root{
+    --cor1: #BFA004;
+    --cor2: #F2CB05;
+    --cor3: #F2E205;
+    --cor4: #BFA004;
 }
 
 body{
@@ -11,6 +19,25 @@ body{
     align-items: center;
     justify-content: center;
     height: 100vh;
-    font-family: 'Luckiest guy', sans-serif;
+}
+
+.texto{
+    font-size: 135px;
+    text-transform: uppercase;
+    background: linear-gradient(45deg, var(--cor1), var(--cor2), var(--cor3), var(--cor4));
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    outline: none;
+}
+
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
 }
 
