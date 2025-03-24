@@ -8,9 +8,13 @@
 }
 
 :root{
-    --cor1: #0568A6;
-    --cor2: #0578A6;
-    --cor3: #5EA4BF;
+    --cor1: #8C0E03;
+    --cor2: #D92B04;
+    --cor3: #D97904;
+    --cor4: #F2B705;
+    --cor5: #D97904;
+    --cor6: #D92B04;
+    --cor7: #8C0E03;
 }
 
 body{
@@ -24,7 +28,7 @@ body{
 .texto{
     font-size: 135px;
     text-transform: uppercase;
-    background: linear-gradient(45deg, var(--cor1), var(--cor2), var(--cor3), var(--cor1));
+    background: linear-gradient(45deg, var(--cor1), var(--cor2), var(--cor3), var(--cor4), var(--cor5), var(--cor6), var(--cor7));
     background-size: 400% 100%;
     animation: degrade 10s linear infinite alternate;
     -webkit-background-clip: text;
