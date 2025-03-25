@@ -25,7 +25,7 @@ body{
 }
 
 .texto{
-    font-size: 135px;
+    font-size: 120px;
     text-transform: uppercase;
     background: linear-gradient(45deg, var(--cor1), var(--cor2), var(--cor3), var(--cor4), var(--cor5), var(--cor6), var(--cor7));
     background-size: 400% 100%;
