@@ -44,3 +44,9 @@ body{
     }
 }
 
+@media screen and (max-width: 700px){
+    .texto{
+        font-size: 70px;
+    }
+}
+
