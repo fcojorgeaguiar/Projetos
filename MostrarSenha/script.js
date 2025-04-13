@@ -9,5 +9,4 @@ function mostrarSenha(){
     inputPass.setAttribute('type', 'password')
     btnShowPass.classList.replace('bi-eye-slash-fill', 'bi-eye-fill')
    }
-
 }
