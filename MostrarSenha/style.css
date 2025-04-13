@@ -6,12 +6,20 @@
     box-sizing: border-box;
 }
 
+:root{
+    --cor1: #4C6473;
+    --cor2: #142F40;
+    --cor3: #0D1A26;
+}
+
 body{
-    background-color: tomato;
+    background: linear-gradient(45deg, var(--cor1), var(--cor2), var(--cor3));
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: 400% 100%;
+    animation: degrade 10s linear infinite alternate;
 }
 
 div{
@@ -37,3 +45,16 @@ div i{
     transform: translateY(5px);
     color: #5c4c4c;
 }
+
+@keyframes degrade {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
