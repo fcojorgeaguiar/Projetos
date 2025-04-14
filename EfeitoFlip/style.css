@@ -12,13 +12,14 @@ body{
     align-items: center;
     justify-content: center;
     gap: 20px;
+    background-color: #102B39;
 }
 
 .conteiner{
     position: relative;
     width: 350px;
     height: 500px;
-    background-color: #ffffff;
+    background-color: #102B39;
 }
 
 .conteiner:hover .flip{
@@ -59,7 +60,8 @@ body{
 
 p{
     text-align: justify;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     margin: 25px;
+    color: #102B39;
 }
 
