@@ -1,0 +1,113 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    height: 500vh;
+    background-color: orangered;
+}
+
+.conteiner{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: .5s;
+}
+
+header.rolagem{
+    background-color: #fff;
+    padding: 20px 4%;
+}
+
+header.rolagem a{
+    color: orange;
+}
+
+header.rolagem i{
+    color: orange;
+}
+
+header i{
+    color: #fff;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+header ul li{
+    display: inline-block;
+    margin: 0 40px;
+}
+
+header ul li a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.banner h1{
+     font-size: 4em;
+}
+
+.banner h1 span{
+    color: orangered;
+}
+
+.btn-contato button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    padding: 3px;
+    border-radius: 3px;
+    background-color: yellow;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.banner{
+    height: 100vh;
+    background-image: url(Imagens/pexels-the-trvlr-2643896.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 540px){
+    .banner h1{
+        font-size: 1.9em;
+    }
+}
+
+@media screen and (min-width: 541px) and (max-width: 800px){
+    .banner h1{
+        font-size: 2.2em;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1000px){
+    .banner h1{
+        font-size: 2.6em;
+    }
+}
