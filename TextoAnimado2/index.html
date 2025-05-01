@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Texto Animado 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #111;
+        }
+        h2{
+            position: relative;
+            font-size: 6em;
+            color: #222;
+        }
+        h2:before{
+            content: attr(data-text);
+            position: absolute;
+            color: #fff;
+            width: 100px;
+            overflow: hidden;
+            white-space: nowrap;
+            border-right: 4px solid #fff;
+            animation: animate  8s linear infinite;
+            filter: drop-shadow(0 0 20px #fff) drop-shadow(0 0 50px #fff);
+        }
+        @keyframes animate{
+            0%, 10%, 100%{
+                width: 0;
+            }
+            70%, 90%{
+                width: 100%;
+            }
+        }
+        @media screen and (max-width: 510px){
+            h2{
+                font-size: 4em;
+            }
+        }
+        @media screen and (min-width: 511px) and (max-width: 710px){
+            h2{
+                font-size: 5em;
+            }
+        }
+        @media screen and (min-width: 711px){
+            h2{
+                font-size: 7em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2 data-text="Texto Exemplo">Texto Exemplo</h2>
+</body>
+</html>
