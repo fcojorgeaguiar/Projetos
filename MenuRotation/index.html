@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotation Effect</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+       :root{
+          --corFundo: #000000;
+          --corTexto: #1f1f;
+       }
+
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--corFundo);
+            font-family: sans-serif;
+        }
+
+        ul{
+          display: flex;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        a{
+            position: relative;
+            display: block;
+            padding: 15px 20px;
+            margin: 0 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: var(--corTexto);
+        }
+
+        a:before{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-top: 2px solid var(--corTexto);
+            border-left: 2px solid var(--corTexto);
+            transition: 0.5s;
+            box-sizing: border-box;
+            transform-origin: left;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a>
+        <li><a href="#">About</a>
+        <li><a href="#">Services</a>
+        <li><a href="#">Contact</a>
+    </ul>
+</body>
+</html
