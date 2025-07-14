@@ -57,6 +57,32 @@
             box-sizing: border-box;
             transform-origin: left;
         }
+
+        a:hover:before{
+            width: 15px;
+            height: 15px;
+            transform: rotate(360deg);
+        }
+
+        a:after{
+            content: '';
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            border-bottom: 2px solid var(--corTexto);
+            border-right: 2px solid var(--corTexto);
+            transition: 0.5s;
+            box-sizing: border-box;
+            transform-origin: right;
+        }
+
+        a:hover:after{
+            width: 15px;
+            height: 15px;
+            transform: rotate(360deg);
+        }
     </style>
 </head>
 <body>
