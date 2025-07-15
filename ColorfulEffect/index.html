@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Effect</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #1b1b1b;
+            font-family: sans-serif;
+        }
+
+        ul{
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li{
+            list-style: none;
+        }
+
+        ul a{
+            position: relative;
+            display: block;
+            color: transparent;
+            -webkit-text-stroke: 1px white;
+            font-size: 60px;
+            font-weight: 900;
+            text-transform: uppercase;
+            text-decoration: none;
+            transition: 0.5s;
+        }
+
+        a:before, a:after {
+            content: attr(data-text);
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: 0.5s;
+        }
+
+        a:hover:before{
+            color: #bb0000;
+            z-index: 1;
+            -webkit-text-stroke: 1px #000000;
+            transform: translate(10px, -10px);
+        }
+
+        a:hover:after{
+            color: #77efff;
+            z-index: 2;
+            -webkit-text-stroke: 1px #000000;
+            transform: translate(20px, -20px);
+        }
+
+        a:hover{
+            color: white;
+            -webkit-text-stroke: 1px #000000;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#" data-text="home">Home</a></li>
+        <li><a href="#" data-text="about">About</a></li>
+        <li><a href="#" data-text="services">Services</a></li>
+        <li><a href="#" data-text="team">Team</a></li>
+        <li><a href="#" data-text="Contact">Contact</a></li>
+    </ul>
+</body>
+</html>
