@@ -4,6 +4,7 @@ const data = document.getElementById('data')
 const assunto1 = document.getElementById('a1')
 const assunto2 = document.getElementById('a2')
 const assunto3 = document.getElementById('a3')
+const corpo = document.body;
 
 dia.style.display = 'none'
 assunto3.style.display = 'none'
@@ -14,37 +15,44 @@ const calendario = setInterval(function time(){
      switch(s){
         case 0:
             sem.innerHTML = 'Domingo'
-            assunto1.innerText = 'Noções de Direito Constitucional: Dos Princípios Fundamentais (Art. 1º ao 4º, CF); Dos Direitos e Garantias Fundamentais (Art. 5º ao 11);'
-            assunto2.innerText = 'Noções básicas de relações humanas. Motivação. Comunicação. Comunicação interpessoal. Noções de recebimento e transmissão de informações.'
+            assunto1.innerText = 'Interpretação de textos.'
+            assunto2.innerText = 'Conjuntos; problemas aritiméticos.'
+            corpo.style.backgroundColor = '#4C5958'
             break
         case 1:
             sem.innerHTML = "Segunda-Feira"
-            assunto1.innerText = 'Noções de Direito Administrativo: Estado, Governo e Administração Pública: conceitos, elementos, poderes, natureza, fins e princípios; Direito Administrativo: conceito, fontes e princípios. Divisão administrativa. Órgãos e entidades públicas.'
-            assunto2.innerText = 'Fundamentos básicos de administração: conceitos, características e finalidade. Funções administrativas. Técnicas administrativas e organizacionais.'
+            assunto1.innerText = 'Ortografia; divisão silábica; acentuação gráfica.'
+            assunto2.innerText = 'Sistemas'
+            corpo.style.backgroundColor ='#10403B'
             break
         case 2:
             sem.innerHTML = 'Terça-Feira'
-            assunto1.innerText = 'Ato Administrativo: conceito, requisitos, atributos, classificação e espécies. Invalidação, anulação e revogação. '
-            assunto2.innerText = 'Poderes administrativos: poder vinculado; poder discricionário; poder hierárquico; poder disciplinar; poder regulamentar; poder de polícia; uso e abuso do poder. Redação oficial  ofícios, comunicações internas, cartas, requerimentos, protocolo, expedição e distribuição de correspondência.'
+            assunto1.innerText = 'Substantivos; numerais; artigos; interjeições.'
+            assunto2.innerText = 'Funções; equações.'
+            corpo.style.backgroundColor = '#0CF25D'
             break
         case 3:
             sem.innerHTML = 'Quarta-Feira'
-            assunto1.innerText = 'Licitações e contratos. Lei 14.133/21.'
-            assunto2.innerText = 'Noções básicas de atendimento ao público. Atendimento ao público, qualidade no atendimento.'
+            assunto1.innerText = 'Adjetivo.'
+            assunto2.innerText = 'Trigonometria; geometria plana.'
+            corpo.style.backgroundColor = '#2A8C82'
             break
         case 4: 
             sem.innerHTML = 'Quinta-Feira'
-            assunto1.innerText = 'Serviços públicos: conceito e princípios.'
-            assunto2.innerText = 'Racionalização do trabalho. Higiene e segurança do trabalho: conceito, importância, condições do trabalho.'
+            assunto1.innerText = 'Pronomes'
+            assunto2.innerText = 'Geometria espacial'
+            corpo.style.backgroundColor = '#A62B1F'
             break
         case 5: 
             sem.innerHTML = 'Sexta-Feira'
-            assunto1.innerText = 'Servidores (arts. 39-41, CF).'
-            assunto2.innerText = 'Etiqueta no trabalho, qualidade de vida no trabalho.'
+            assunto1.innerText = 'Verbos.'
+            assunto2.innerText = 'Probabilidade; análise combinatória; estatística'
+            corpo.style.backgroundColor = '#214001'
             break
         case 6:
             sem.innerHTML = 'Sábado'
-            assunto1.innerText = 'Improbidade administrativa, processo administrativo.'
-            assunto2.innerText = 'Controle de materiais, organização de arquivos. Rotinas administrativas: técnicas de arquivo e protocolo.'
+            assunto1.innerText = 'Sintaxe; pontuação; advérbio; preposições. '
+            assunto2.innerText = 'Raciocínio Lógico'
+            corpo.style.backgroundColor = '#161F30'
      }
 })
