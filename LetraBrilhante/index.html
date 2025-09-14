@@ -4,8 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Letra Brilhante</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;
+        }
+
+        :root{
+            --colorBack: #040305;
+            --color1: #9800ce;
+            --color2: rgb(87,87, 87);
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            font-size: 4em;
+            background: var(--colorBack);
+            color: var(--color2);
+        }
+
+        .conteiner span{
+            animation: brilho 2s ease-in-out infinite;
+        }
+        
+        .conteiner span:nth-of-type(2){
+            animation-delay: 0.25s;
+        }
+
+         .conteiner span:nth-of-type(3){
+            animation-delay: 0.5s;
+        }
+
+         .conteiner span:nth-of-type(4){
+            animation-delay: 0.75s;
+        }
+
+         .conteiner span:nth-of-type(5){
+            animation-delay: 1s;
+        }
+
+         .conteiner span:nth-of-type(6){
+            animation-delay: 1.25s;
+        }
+
+        @keyframes brilho{
+            0%{
+                color: #ffffff;
+                text-shadow: 0 0 12px var(--color1), 0 0 50px var(--color1), 0 0 100px var(--color1);
+            }
+            10%, 90%{
+                color: var(--color2);
+                text-shadow: none;
+            }
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="conteiner">
+        <span>B</span>
+        <span>R</span>
+        <span>I</span>
+        <span>L</span>
+        <span>H</span>
+        <span>O</span>
+    </div>
 </body>
 </html>
