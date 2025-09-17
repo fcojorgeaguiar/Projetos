@@ -13,13 +13,50 @@
 
         body{
             background-color: #333;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .wraper{
-            max-width: 760px;
-            margin: 10px auto;
             background-color: white;
-            padding: 40px;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            border-radius: 8px;
+        }
+
+        .days-week {
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+            margin-bottom: 6px;
+
+        }
+
+        .number-days{
+            display: flex;
+            width: 100%;
+            flex-wrap: wrap;
+        }
+
+        .days-week span{
+            color: black;
+            display: inline-block;
+            width: 14.2%;
+        }
+
+        .number-days span{
+           display: inline-block;
+           width: 14.2%;
+           margin: 8px 0;
+            color: #555;
+        }
+
+        .mes-anterior{
+            opacity: 0.5;
         }
     </style>
 </head>
@@ -27,20 +64,25 @@
     <div class="wraper">
          <div class="days-week">
              <span>Domingo</span> 
-             <span>Segunda-Feira</span>
-             <span>Terça-Feira</span>
-             <span>Quarta-Feira</span>
-             <span>Quinta-Feira</span>
-             <span>Sexta-Feira</span>
+             <span>Segunda</span>
+             <span>Terça</span>
+             <span>Quarta</span>
+             <span>Quinta</span>
+             <span>Sexta</span>
              <span>Sábado</span>
          </div>
          <div class="number-days">
-
+            <span class="mes-anterior">30</span>
+            <span class="mes-anterior">31</span>
          </div>
     </div><!--wraper-->
 
     <script>
-        for
+        let el = document.querySelector(".number-days");
+        let i = 0;
+        for(i = 1; i<= 31; i++){
+              el.innerHTML+='<span>'+i+'</span>'
+        }
     </script>
 </body>
 </html>
