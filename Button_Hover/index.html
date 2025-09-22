@@ -7,5 +7,15 @@
 </head>
 <body>
     <button>CLIQUE EM MIM</button>
+    <script>
+        let body = document.querySelector("body");
+        let button = document.querySelector("button");
+
+        button.addEventListener("click", ()=>{
+            body.style.backgroundColor = "#00a030";
+            button.style.borderColor = "yellow";
+            button.style.color = "yellow";
+        })
+    </script>
 </body>
 </html>
