@@ -58,6 +58,9 @@ button{
     color: blue;
     transition: .5s;
     overflow: hidden;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
     
 }
 
@@ -104,6 +107,10 @@ button{
      animation: animaBorder 5s linear infinite;
 }
 
+#tres{
+    border-radius: 0px;
+}
+
 @keyframes animaBorder {
     0%{
         background-position: 0%;
@@ -111,10 +118,6 @@ button{
     100%{
         background-position: 200%;
     }
-}
-
-#dois::after{
-    filter: blur(50px);
 }
 
 @media screen and (max-width: 650px){
