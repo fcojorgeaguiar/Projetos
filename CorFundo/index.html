@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muda cor de fundo</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            transition: background-color 1s ease;
+        }
+
+        button{
+           border: none;
+           background-color: black;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           color: white;
+           font-size: 20px;
+           width: 25px;
+           height: 25px;
+           padding: 50px;
+           border-radius: 50%;
+           cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <button>Mudar</button>
+</body>
+<script>
+    let body = document.querySelector("body");
+    let button = document.querySelector("button");
+    const cores = ['yellow', 'red', 'blue', 'green', 'orange'];
+    let i = 0;
+
+    button.addEventListener("click", ()=>{
+        body.style.backgroundColor = cores[i];
+        i = (i + 1) % cores.length;
+    })
+
+</script>
+</html>
