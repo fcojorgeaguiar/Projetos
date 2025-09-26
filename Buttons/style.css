@@ -108,7 +108,47 @@ button{
 }
 
 #tres{
-    border-radius: 0px;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    margin: auto;
+    width: 90px;
+    height: 90px;
+}
+
+#tres:before{
+    content: "";
+   background-image: conic-gradient(
+      green 60deg,
+      transparent 60deg
+   );
+    height: 160%;
+    width: 160%;
+    position: absolute;
+    left: -25%;
+    top: -25%;
+    animation: rotate 2s infinite linear;
+}
+
+@keyframes rotate {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#tres:after{
+    content: "CLIQUE";
+    height: 94%;
+    width: 94%;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    color: green;
+    top: 3%;
+    left: 3%;
+    display: grid;
+    place-items: center;
 }
 
 @keyframes animaBorder {
