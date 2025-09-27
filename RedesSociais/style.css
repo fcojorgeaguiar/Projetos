@@ -82,9 +82,9 @@ ul li:hover::before{
     opacity: 1;
 }
 
-@media screen and (max-width: 720px){
+@media screen and (max-width: 750px){
     ul{
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
     }
 }
