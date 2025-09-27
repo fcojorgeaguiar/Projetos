@@ -82,7 +82,7 @@ ul li:hover::before{
     opacity: 1;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 720px){
     ul{
       display: grid;
       grid-template-columns: 1fr 1fr;
