@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preenchimento Hover</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .link{
+            width: 100px;
+            height: 100px;
+            box-shadow: 0 0 8px #00000058;
+            margin: 0 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 30px;
+            font-size: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link i{
+            transition: .2s;
+        }
+
+        .link:hover i{
+            color: #fff;
+            transform: scale(1.2);
+        }
+
+        .link-1{
+            color: #ff5500;
+        }
+
+        .link-2{
+            color: #00aaff;
+        }
+
+        .link-3{
+            color: #ff0088;
+        }
+
+        .link-1::before{
+            background-color: #ff5500;
+        }
+
+        .link-2::before{
+            background-color: #00aaff;
+        }
+
+        .link-3::before{
+            background-color: #ff0088;
+        }
+
+        .link::before{
+            content: "";
+            width: 100px;
+            height: 100px;
+            border-radius: 30px;
+            position: absolute;
+            left: -100px;
+            top: 100%;
+        }
+
+        .link:hover::before{
+             animation: desloca .5s;
+             left: 0;
+             top: 0;
+        }
+
+        @keyframes desloca {
+            0%{
+                 left: -100px;
+                 top: 100%;
+            }
+
+            50%{
+                left: 15%;
+                top: -25%;
+            }
+
+            100%{
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="#" class="link link-1">
+        <i class="bi bi-house-door-fill"></i>
+    </a>
+
+    <a href="#" class="link link-2">
+        <i class="bi bi-person-circle"></i>
+    </a>
+
+    <a href="#" class="link link-3">
+        <i class="bi bi-gear-wide-connected"></i>
+    </a>
+</body>
+</html>
