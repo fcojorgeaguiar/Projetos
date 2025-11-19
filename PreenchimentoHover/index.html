@@ -12,6 +12,12 @@
             box-sizing: border-box;
         }
 
+        :root{
+            --corIcon1: #ff5500;
+            --corIcon2: #00aaff;
+            --corIcon3: #ff0088;
+        }
+
         body{
             height: 100vh;
             display: flex;
@@ -43,27 +49,27 @@
         }
 
         .link-1{
-            color: #ff5500;
+            color: var(--corIcon1);
         }
 
         .link-2{
-            color: #00aaff;
+            color: var(--corIcon2);
         }
 
         .link-3{
-            color: #ff0088;
+            color: var(--corIcon3);
         }
 
         .link-1::before{
-            background-color: #ff5500;
+            background-color: var(--corIcon1);
         }
 
         .link-2::before{
-            background-color: #00aaff;
+            background-color: var(--corIcon2);
         }
 
         .link-3::before{
-            background-color: #ff0088;
+            background-color: var(--corIcon3);
         }
 
         .link::before{
