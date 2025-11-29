@@ -4,6 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Relógio Analógico</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #111;
+        }
+
+        .conteiner{
+            position: relative;
+            width: 350px;
+            height: 350px;
+        }
+
+        .conteiner .circle{
+            position: absolute;
+            pointer-events: none;
+            border-radius: 50%;
+            background: yellow;
+            animation: 2s ease-in infinite alternate;
+        }
+
+        .conteiner .circle:nth-child(1){
+            width: 100px;
+            height: 100px;
+            top: -60px;
+            left: -60px;
+            background: linear-gradient(#e524c3, #8626b2);
+            animation-name: move-up;
+        }
+
+        @keyframes move-up{
+            to{
+                transform: translateY(-10px);
+            }
+        }
+
+        .conteiner .circle:nth-child(2){
+             width: 120px;
+             height: 120px;
+             bottom: -20px;
+             right: -20px;
+             background: linear-gradient(#d64612, #e48307);
+             animation-name: move-down;
+        }
+
+         @keyframes move-down{
+            to{
+                transform: translateY(-10px);
+            }
+        }
+
+        .conteiner .clock{
+            width: 350px;
+            height: 350px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgb(255, 255, 255, .1);
+            border-radius: 50%;
+            backdrop-filter: blur(15px);
+            background: rgba(255, 255, 255, .05);
+            box-shadow: 0 0 30px rgba(0, 0, 0, .2);
+        }
+
+        .conteiner .clock .clock-bg img{
+            width: 100%;
+            height: 100%;
+        }
+
+        
+    </style>
 </head>
 <body>
     <div class="conteiner">
@@ -12,7 +91,16 @@
 
         <ul class="clock">
             <li class="clock-bg">
-                
+                <img src="Imagens/clock.png" alt="...">
+            </li>
+            <li class="hour">
+                <span class="hr" id="hr"></span>
+            </li>
+            <li class="minute">
+                <span class="min" id="min"></span>
+            </li>
+            <li class="second">
+                <span class="sec" id="sec"></span>
             </li>
         </ul>
         </div>
